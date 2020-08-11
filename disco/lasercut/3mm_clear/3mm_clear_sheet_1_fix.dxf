@@ -31,7 +31,7 @@ $EXTMIN
   9
 $EXTMAX
  10
-104.3
+35
  20
 23
  30
@@ -91,7 +91,7 @@ STANDARD
   9
 $CLAYER
   8
-raster
+nocut
   9
 $CELTYPE
   6
@@ -1115,9 +1115,9 @@ AcDbViewportTableRecord
  21
 1
  12
-19.18406915475029
+28.01849931602484
  22
-9.313499997995832
+12.70260181505731
  13
 0
  23
@@ -1143,7 +1143,7 @@ AcDbViewportTableRecord
  37
 0
  40
-23.29245420059518
+44.2606281993403
  41
 1.919282511210762
  42
@@ -2323,6 +2323,30 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
+nocut
+ 70
+    0
+ 62
+   96
+420
+32768
+  6
+CONTINUOUS
+370
+    0
+390
+F
+  0
+LAYER
+  5
+4E
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
 raster
  70
     0
@@ -2337,7 +2361,7 @@ F
   0
 LAYER
   5
-4E
+4F
 330
 2
 100
@@ -2373,7 +2397,7 @@ AcDbSymbolTable
   0
 STYLE
   5
-4F
+50
 330
 2
 100
@@ -2457,7 +2481,7 @@ ACAD
   0
 APPID
   5
-50
+51
 330
 9
 100
@@ -2489,7 +2513,7 @@ AcDbDimStyleTable
   0
 DIMSTYLE
 105
-51
+52
 330
 A
 100
@@ -2553,7 +2577,7 @@ Standard
  77
     0
  78
-    1
+    8
  79
     0
 170
@@ -2591,7 +2615,7 @@ Standard
 277
     2
 278
-    0
+   44
 279
     0
 280
@@ -2613,7 +2637,7 @@ Standard
 289
     3
 340
-standard
+STANDARD
 341
 
 371
@@ -2673,7 +2697,7 @@ AcDbBlockTableRecord
   0
 BLOCK_RECORD
   5
-52
+53
 330
 1
 100
@@ -2775,9 +2799,9 @@ AcDbBlockEnd
   0
 BLOCK
   5
-53
+54
 330
-52
+53
 100
 AcDbEntity
   8
@@ -2799,7 +2823,7 @@ led_array_plate
   0
 LWPOLYLINE
   5
-55
+56
 100
 AcDbEntity
   8
@@ -2861,7 +2885,7 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-56
+57
 100
 AcDbEntity
   8
@@ -2923,28 +2947,6 @@ AcDbPolyline
   0
 CIRCLE
   5
-57
-100
-AcDbEntity
-  8
-led_array_plate
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbCircle
- 10
-56.15354330708661
- 20
-19.84645669291339
- 40
-0.044
-  0
-CIRCLE
-  5
 58
 100
 AcDbEntity
@@ -2959,7 +2961,7 @@ ByLayer
 100
 AcDbCircle
  10
-62.84645669291339
+56.15354330708661
  20
 19.84645669291339
  40
@@ -2983,7 +2985,7 @@ AcDbCircle
  10
 62.84645669291339
  20
-13.15354330708661
+19.84645669291339
  40
 0.044
   0
@@ -3003,7 +3005,7 @@ ByLayer
 100
 AcDbCircle
  10
-56.15354330708661
+62.84645669291339
  20
 13.15354330708661
  40
@@ -3025,11 +3027,11 @@ ByLayer
 100
 AcDbCircle
  10
-55
+56.15354330708661
  20
-12
+13.15354330708661
  40
-0.1285
+0.044
   0
 CIRCLE
   5
@@ -3047,7 +3049,7 @@ ByLayer
 100
 AcDbCircle
  10
-64
+55
  20
 12
  40
@@ -3071,7 +3073,7 @@ AcDbCircle
  10
 64
  20
-21
+12
  40
 0.1285
   0
@@ -3091,19 +3093,19 @@ ByLayer
 100
 AcDbCircle
  10
-55
+64
  20
 21
  40
 0.1285
   0
-LWPOLYLINE
+CIRCLE
   5
 5F
 100
 AcDbEntity
   8
-lasercutter
+led_array_plate
   6
 ByLayer
  62
@@ -3111,47 +3113,13 @@ ByLayer
 370
    -1
 100
-AcDbPolyline
- 90
-    4
- 70
-    1
- 43
-0
+AcDbCircle
  10
-0
+55
  20
-0
- 10
-35
- 20
-0
- 10
-35
- 20
-23
- 10
-0
- 20
-23
-  0
-ENDBLK
-  5
-54
-330
-52
-100
-AcDbEntity
-  8
-0
-100
-AcDbBlockEnd
-  0
-ENDSEC
-  0
-SECTION
-  2
-ENTITIES
+21
+ 40
+0.1285
   0
 LWPOLYLINE
   5
@@ -3191,9 +3159,65 @@ AcDbPolyline
  20
 23
   0
+ENDBLK
+  5
+55
+330
+53
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+ENDSEC
+  0
+SECTION
+  2
+ENTITIES
+  0
 LWPOLYLINE
   5
 61
+100
+AcDbEntity
+  8
+lasercutter
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    4
+ 70
+    1
+ 43
+0
+ 10
+0
+ 20
+0
+ 10
+35
+ 20
+0
+ 10
+35
+ 20
+23
+ 10
+0
+ 20
+23
+  0
+LWPOLYLINE
+  5
+62
 100
 AcDbEntity
   8
@@ -3231,28 +3255,6 @@ AcDbPolyline
   0
 CIRCLE
   5
-62
-100
-AcDbEntity
-  8
-vector
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbCircle
- 10
-7
- 20
-9.800000000000001
- 40
-0.058
-  0
-CIRCLE
-  5
 63
 100
 AcDbEntity
@@ -3267,11 +3269,11 @@ ByLayer
 100
 AcDbCircle
  10
-2
+10.15354330708661
  20
-9.800000000000001
+8.646456692913389
  40
-0.058
+0.044
   0
 CIRCLE
   5
@@ -3289,11 +3291,11 @@ ByLayer
 100
 AcDbCircle
  10
-2
+16.84645669291339
  20
-0.8
+8.646456692913389
  40
-0.058
+0.044
   0
 CIRCLE
   5
@@ -3311,6 +3313,116 @@ ByLayer
 100
 AcDbCircle
  10
+16.84645669291339
+ 20
+1.95354330708661
+ 40
+0.044
+  0
+CIRCLE
+  5
+66
+100
+AcDbEntity
+  8
+vector
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+10.15354330708661
+ 20
+1.95354330708661
+ 40
+0.044
+  0
+CIRCLE
+  5
+67
+100
+AcDbEntity
+  8
+nocut
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+7
+ 20
+9.800000000000001
+ 40
+0.058
+  0
+CIRCLE
+  5
+68
+100
+AcDbEntity
+  8
+nocut
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+2
+ 20
+9.800000000000001
+ 40
+0.058
+  0
+CIRCLE
+  5
+69
+100
+AcDbEntity
+  8
+nocut
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+2
+ 20
+0.8
+ 40
+0.058
+  0
+CIRCLE
+  5
+6A
+100
+AcDbEntity
+  8
+nocut
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
 7
  20
 0.8
@@ -3319,11 +3431,11 @@ AcDbCircle
   0
 LINE
   5
-66
+6B
 100
 AcDbEntity
   8
-vector
+nocut
   6
 ByLayer
  62
@@ -3343,11 +3455,11 @@ AcDbLine
   0
 ARC
   5
-67
+6C
 100
 AcDbEntity
   8
-vector
+nocut
   6
 ByLayer
  62
@@ -3371,11 +3483,11 @@ AcDbArc
   0
 LINE
   5
-68
+6D
 100
 AcDbEntity
   8
-vector
+nocut
   6
 ByLayer
  62
@@ -3395,11 +3507,11 @@ AcDbLine
   0
 ARC
   5
-69
+6E
 100
 AcDbEntity
   8
-vector
+nocut
   6
 ByLayer
  62
@@ -3423,11 +3535,11 @@ AcDbArc
   0
 LINE
   5
-6A
+6F
 100
 AcDbEntity
   8
-vector
+nocut
   6
 ByLayer
  62
@@ -3447,11 +3559,11 @@ AcDbLine
   0
 ARC
   5
-6B
+70
 100
 AcDbEntity
   8
-vector
+nocut
   6
 ByLayer
  62
@@ -3475,11 +3587,11 @@ AcDbArc
   0
 LINE
   5
-6C
+71
 100
 AcDbEntity
   8
-vector
+nocut
   6
 ByLayer
  62
@@ -3499,11 +3611,11 @@ AcDbLine
   0
 ARC
   5
-6D
+72
 100
 AcDbEntity
   8
-vector
+nocut
   6
 ByLayer
  62
@@ -3527,11 +3639,11 @@ AcDbArc
   0
 LWPOLYLINE
   5
-6E
+73
 100
 AcDbEntity
   8
-vector
+nocut
   6
 ByLayer
  62
@@ -3555,7 +3667,7 @@ AcDbPolyline
  20
 10.1
  42
--0.414213562373095
+-0.4142135623730933
  10
 18.3
  20
@@ -3565,7 +3677,7 @@ AcDbPolyline
  20
 0.8000000000000007
  42
--0.4142135623730966
+-0.4142135623730958
  10
 18
  20
@@ -3575,25 +3687,25 @@ AcDbPolyline
  20
 0.5000000000000009
  42
--0.4142135623730967
+-0.4142135623730971
  10
 8.700000000000003
  20
 0.8000000000000007
  10
-8.700000000000001
+8.700000000000003
  20
 9.800000000000001
  42
--0.414213562373095
+-0.4142135623730916
   0
 LWPOLYLINE
   5
-6F
+74
 100
 AcDbEntity
   8
-vector
+nocut
   6
 ByLayer
  62
@@ -3617,7 +3729,7 @@ AcDbPolyline
  20
 7.349606299212599
  42
--0.414213562373095
+-0.4142135623730951
  10
 15.75
  20
@@ -3627,7 +3739,7 @@ AcDbPolyline
  20
 6.849606299212599
  42
--0.414213562373095
+-0.4142135623730953
  10
 15.45
  20
@@ -3651,99 +3763,11 @@ AcDbPolyline
   0
 CIRCLE
   5
-70
+75
 100
 AcDbEntity
   8
-vector
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbCircle
- 10
-10.15354330708661
- 20
-8.646456692913389
- 40
-0.044
-  0
-CIRCLE
-  5
-71
-100
-AcDbEntity
-  8
-vector
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbCircle
- 10
-16.84645669291339
- 20
-8.646456692913389
- 40
-0.044
-  0
-CIRCLE
-  5
-72
-100
-AcDbEntity
-  8
-vector
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbCircle
- 10
-16.84645669291339
- 20
-1.95354330708661
- 40
-0.044
-  0
-CIRCLE
-  5
-73
-100
-AcDbEntity
-  8
-vector
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbCircle
- 10
-10.15354330708661
- 20
-1.95354330708661
- 40
-0.044
-  0
-CIRCLE
-  5
-74
-100
-AcDbEntity
-  8
-vector
+nocut
   6
 ByLayer
  62
@@ -3754,28 +3778,6 @@ ByLayer
 AcDbCircle
  10
 9
- 20
-0.8000000000000007
- 40
-0.1285
-  0
-CIRCLE
-  5
-75
-100
-AcDbEntity
-  8
-vector
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbCircle
- 10
-18
  20
 0.8000000000000007
  40
@@ -3787,7 +3789,29 @@ CIRCLE
 100
 AcDbEntity
   8
-vector
+nocut
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+18
+ 20
+0.8000000000000007
+ 40
+0.1285
+  0
+CIRCLE
+  5
+77
+100
+AcDbEntity
+  8
+nocut
   6
 ByLayer
  62
@@ -3805,11 +3829,11 @@ AcDbCircle
   0
 CIRCLE
   5
-77
+78
 100
 AcDbEntity
   8
-vector
+nocut
   6
 ByLayer
  62
